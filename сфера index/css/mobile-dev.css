@@ -1,0 +1,340 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+/* Header */
+header {
+    position: relative;
+    text-align: center;
+    background-image: url('https://i.pinimg.com/originals/00/1b/8b/001b8b9e668deed472ff875a55f68ceb.jpg');
+    background-size: cover;  
+    background-position: center;  
+    color: #fff;
+    padding: 120px 20px;
+    min-height: 400px;  
+}
+
+.logo {
+    position: relative;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  header .btnn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: white;
+    color:  black;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+}
+
+/* Заголовок */
+header h1 {
+ 
+    font-size: 4em;
+    z-index: 1;
+    position: relative;
+   
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Добавление тени для контраста */
+}
+
+/* Кнопка */
+header .btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; /* Уменьшаем размер заголовка на мобильных устройствах */
+    }
+
+    header .btn {
+        padding: 10px 20px; /* Уменьшаем размер кнопки */
+    }
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Sections */
+section {
+    background-color: #fff;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+section img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 550px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Стили для карточек */
+#courses {
+    background-color: #f4f4f4;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#courses h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #777;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #2980b9;
+}
+/* --- Адаптивная верстка: до 1024px --- */
+@media (max-width: 1024px) {
+    section {
+        padding: 40px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
+
+/* --- Адаптивность для планшетов (до 768px) --- */
+@media (max-width: 768px) {
+    header {
+        padding: 80px 15px;
+        min-height: 300px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header .btn,
+    header .btnn {
+        padding: 10px 18px;
+        font-size: 0.95em;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+
+    .card-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* --- Адаптивность для телефонов (до 480px) --- */
+@media (max-width: 480px) {
+    header {
+        padding: 60px 10px;
+        min-height: 250px;
+    }
+
+    .logo {
+        font-size: 1.7rem;
+        gap: 8px;
+    }
+
+    header h1 {
+        font-size: 1.7em;
+    }
+
+    header .btn,
+    header .btnn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card img {
+        height: 160px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-description {
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+
+

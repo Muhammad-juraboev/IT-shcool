@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Путь в веб-разработку — Полный гайд</title>
+
+    <!-- Подключаем Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Подключаем стили для Freepik изображений -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/web-raz.css"">
+     
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="./IT LEARN.TJ.jpg"
+            alt="Логотип" />
+        <span>IT LEARN.TJ</span>
+    </div>
+    <h1>Кто такой веб-разработчик,<br> чем он занимается и как им стать</h1>
+    <a href="file:///C:/Users/user/Desktop/1/index1.html" class="btnn">HOME</a>
+    <a href="#courses" class="btn">Просмотреть курсы</a>
+    </header>
+
+    <main>
+
+        <section class="introduction">
+            <h2><i class="fas fa-laptop-code"></i> Введение</h2>
+            <p>
+                Веб-разработка — это процесс создания веб-сайтов и веб-приложений. Каждый веб-разработчик должен
+                понимать не только технологии, которые он использует, но и основы проектирования, создания структуры и
+                взаимодействия с пользователем. Веб-разработка охватывает как фронтенд (сторона клиента), так и бэкенд
+                (серверная сторона), а также интерфейсы и базы данных.
+            </p>
+            <p>
+                Веб-разработчик должен быть знаком с языками программирования, фреймворками и различными инструментами
+                для создания современных и эффективных веб-сайтов. Важность веб-разработки невозможно переоценить, ведь
+                сегодня это основа всех бизнес-платформ, от интернет-магазинов до социальных сетей.
+            </p>
+            <img src="./web/html-css-collage-concept-with-person.jpg" alt="Введение в веб-разработку">
+        </section>
+
+        <section class="history">
+            <h2><i class="fas fa-history"></i> История веба</h2>
+            <p>
+                Веб-разработка начала своё существование в начале 1990-х годов, когда Тим Бернерс-Ли создал первую
+                версию World Wide Web. Веб-страницы того времени были простыми текстовыми документами, без изображений
+                или мультимедийных элементов. Постепенно, с развитием технологий, веб стал более сложным и
+                функциональным.
+            </p>
+            <p>
+                Одним из важнейших этапов стало введение CSS (каскадных таблиц стилей) и JavaScript, который позволил
+                делать страницы интерактивными. Сегодня веб-разработка охватывает не только создание сайтов, но и
+                создание сложных веб-приложений с полноценной функциональностью.
+            </p>
+            <p>
+                Важными этапами в истории веб-разработки стали:
+            <ul>
+                <li>Создание HTML и CSS для разметки и стилизации</li>
+                <li>Появление JavaScript для динамичного взаимодействия с пользователем</li>
+                <li>Введение новых стандартов и технологий, таких как HTML5 и CSS3</li>
+                <li>Развитие фреймворков и библиотек для более эффективной разработки</li>
+            </ul>
+            </p>
+            <img src="./web/html-css-collage-concept.jpg" alt="История веба">
+        </section>
+
+        <section class="html">
+            <h2><i class="fas fa-code"></i> HTML: Структура страницы</h2>
+            <p>
+                HTML (HyperText Markup Language) — это основной язык, который используется для разметки веб-страниц. Он
+                описывает структуру и содержание страницы, определяет, какие элементы на ней будут присутствовать, как
+                они будут отображаться и как будет организована навигация.
+            </p>
+            <p>
+                В HTML используются теги, которые могут быть как парными, так и одиночными. Например:
+            <ul>
+                <li><code>&lt;h1&gt;–&lt;h6&gt;</code>: заголовки различного уровня</li>
+                <li><code>&lt;p&gt;</code>: параграфы</li>
+                <li><code>&lt;a&gt;</code>: ссылки</li>
+                <li><code>&lt;img&gt;</code>: изображения</li>
+                <li><code>&lt;div&gt;</code>: контейнеры для группировки элементов</li>
+            </ul>
+            </p>
+            <p>
+                HTML5, последняя версия языка, предлагает новые теги для улучшения семантики страницы, такие как:
+            <ul>
+                <li><code>&lt;article&gt;</code>: для содержательной части документа</li>
+                <li><code>&lt;section&gt;</code>: для разделов</li>
+                <li><code>&lt;header&gt;</code>: для верхней части страницы</li>
+                <li><code>&lt;footer&gt;</code>: для нижней части страницы</li>
+            </ul>
+            </p>
+            <img src="./web/i.webp" alt="HTML">
+        </section>
+
+        <section class="css">
+            <h2><i class="fas fa-paint-brush"></i> CSS: Красота и стиль</h2>
+            <p>
+                CSS (Cascading Style Sheets) — это язык стилей, который применяется для оформления HTML-страниц. С
+                помощью CSS можно задавать стили для текста, фонов, отступов, шрифтов, а также создавать сложные
+                анимации и эффекты.
+            </p>
+            <p>
+                Основные возможности CSS включают:
+            <ul>
+                <li>Управление цветами и шрифтами</li>
+                <li>Создание отступов, границ, фонов и других визуальных эффектов</li>
+                <li>Адаптивная верстка (responsive design) с помощью media queries</li>
+                <li>Использование Flexbox и Grid для расположения элементов на странице</li>
+                <li>Создание анимаций и переходов</li>
+            </ul>
+            </p>
+            <p>
+                CSS3 добавил множество новых возможностей, таких как градиенты, анимации, тени и т.д., которые
+                значительно улучшили визуальную составляющую веб-страниц.
+            </p>
+            <img src="./web/person-front-computer-working-html.jpg" alt="CSS">
+        </section>
+
+        <section class="js">
+            <h2><i class="fas fa-cogs"></i> JavaScript: Жизнь и динамика</h2>
+            <p>
+                JavaScript — это язык программирования, который позволяет добавлять интерактивность на страницы. С
+                помощью JavaScript веб-страница становится динамичной, пользователи могут взаимодействовать с элементами
+                страницы, отправлять данные на сервер и получать ответы без перезагрузки страницы.
+            </p>
+            <p>
+                Основные особенности JavaScript:
+            <ul>
+                <li>Манипуляция DOM (Document Object Model)</li>
+                <li>Обработка событий (например, клики, отправка форм)</li>
+                <li>Асинхронное выполнение с использованием fetch и async/await</li>
+                <li>Создание динамичных пользовательских интерфейсов</li>
+                <li>Работа с API и данными</li>
+            </ul>
+            </p>
+            <p>
+                JavaScript позволяет создавать не только сайты, но и целые веб-приложения с полноценной логикой. Для
+                этого разработчики используют различные фреймворки и библиотеки, такие как React, Angular, Vue.js.
+            </p>
+            <img src="./web/html-css-collage-concept.jpg" alt="JavaScript">
+        </section>
+
+        <section class="backend">
+            <h2><i class="fas fa-server"></i> Бэкенд: Серверная часть</h2>
+            <p>
+                Бэкенд — это серверная часть веб-приложения, отвечающая за обработку данных, взаимодействие с базами
+                данных и выполнение логики. В отличие от фронтенда, который отвечает за внешний вид и взаимодействие с
+                пользователем, бэкенд работает с данными и поддерживает функциональность сайта на сервере.
+            </p>
+            <p>
+                Основные задачи бэкенд-разработчика:
+            <ul>
+                <li>Создание API для взаимодействия с фронтендом</li>
+                <li>Обработка запросов от пользователей</li>
+                <li>Взаимодействие с базами данных</li>
+                <li>Обеспечение безопасности приложения</li>
+                <li>Оптимизация работы сервера</li>
+            </ul>
+            </p>
+            <p>
+                Языки и фреймворки для бэкенда включают:
+            <ul>
+                <li>Python (Django, Flask)</li>
+                <li>Node.js (Express)</li>
+                <li>Ruby (Rails)</li>
+                <li>PHP (Laravel)</li>
+                <li>Java (Spring)</li>
+            </ul>
+            </p>
+            <img src="./web/becend.webp" alt="Backend">
+        </section>
+
+        <section id="courses" class="courses">
+            <h1>Курсы</h1>
+        
+            <!-- FRONTEND -->
+            <h2><i class="fas fa-paint-brush"></i> Frontend</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="./web/html.webp" alt="Курс HTML">
+                    <div class="card-content">
+                        <h3 class="card-title">HTML</h3>
+                        <p class="card-description">Научитесь создавать структуру сайтов с нуля!</p>
+                        <a href="#" class="card-button">Записаться</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="./web/css.webp" alt="Курс CSS">
+                    <div class="card-content">
+                        <h3 class="card-title">CSS</h3>
+                        <p class="card-description">Сделайте сайты красивыми и адаптивными.</p>
+                        <a href="#" class="card-button">Записаться</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="./web/javascript.webp" alt="Курс JavaScript">
+                    <div class="card-content">
+                        <h3 class="card-title">JavaScript</h3>
+                        <p class="card-description">Добавьте интерактивность и динамику на сайты.</p>
+                        <a href="#" class="card-button">Записаться</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- BACKEND -->
+            <h2><i class="fas fa-server"></i> Backend</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="./web/python.webp" alt="Курс Python">
+                    <div class="card-content">
+                        <h3 class="card-title">Python</h3>
+                        <p class="card-description">Освойте язык для веб-разработки и анализа данных.</p>
+                        <a href="#" class="card-button">Записаться</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="./web/go.webp" alt="Курс Go">
+                    <div class="card-content">
+                        <h3 class="card-title">Go (Golang)</h3>
+                        <p class="card-description">Быстрый и простой язык, отлично подходит для микросервисов.</p>
+                        <a href="#" class="card-button">Записаться</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="./web/c-sharp.webp" alt="Курс C#">
+                    <div class="card-content">
+                        <h3 class="card-title">C#</h3>
+                        <p class="card-description">Создавайте приложения под Windows и .NET.</p>
+                        <a href="#" class="card-button">Записаться</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="./web/PHP.jpg" alt="Курс PHP">
+                    <div class="card-content">
+                        <h3 class="card-title">PHP</h3>
+                        <p class="card-description">Популярен в вебе (WordPress, Laravel). Легко найти работу на фрилансе.</p>
+                        <a href="#" class="card-button">Записаться</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="./web/java.webp" alt="Курс Java">
+                    <div class="card-content">
+                        <h3 class="card-title">Java</h3>
+                        <p class="card-description">Мощный язык, используется в больших компаниях (Spring, Jakarta EE).</p>
+                        <a href="#" class="card-button">Записаться</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="./web/ruby.webp" alt="Курс Ruby">
+                    <div class="card-content">
+                        <h3 class="card-title">Ruby (с Ruby on Rails)</h3>
+                        <p class="card-description">Удобен, но сейчас менее популярен.</p>
+                        <a href="#" class="card-button">Записаться</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+    </main>
+
+    <footer>
+        <p>© Сделан в 2025 сайт IT LEARN.TJ</p>
+    </footer>
+    </body>
+
+</html>

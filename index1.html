@@ -1,174 +1,328 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IT Курсы</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  /> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Курсы</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-  <!-- Шапка сайта -->
-  <header>
-    <div class="logo">
-      <img src="https://sdmntpritalynorth.oaiusercontent.com/files/00000000-bc8c-6246-bbf6-46efdc400df7/raw?se=2025-04-23T09%3A59%3A47Z&sp=r&sv=2024-08-04&sr=b&scid=4d19cc59-87e9-505b-acba-0df43e28aebd&skoid=9370dd2b-ca43-4270-bed5-18b1b71f8fa0&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-23T06%3A59%3A38Z&ske=2025-04-24T06%3A59%3A38Z&sks=b&skv=2024-08-04&sig=Xbfo5hyzDG7m4dqGXAknCoeTCsYdT%2Bs9VWd2QNUaPxc%3D" alt="Логотип" />
-      <span>IT Starter</span>
-    </div>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">
+            <img src="./Фото главний/IT LEARN.TJ.jpg"
+                alt="Логотип" />
+            <span>IT LEARN.TJ</span>
+        </div>
 
-    <ul class="nav-links">
-      <li><a href="#home">Главная</a></li>
-      <li><a href="#about">О нас</a></li>
-      <li><a href="#It">Сфера IT</a></li>
-      <li><a href="#testimonials">Отзывы</a></li>
-      <li><a href="#contact">Контакты</a></li>
-      <li><a href="#register">Регистрация</a></li>
-    </ul>
+        <ul class="nav-links">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#It">Сфера IT</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#courses">Курсы</a></li>
+            <li><a href="#otziv">отзыв</a></li>
+            <li><a href="./регистратция/sign.html" class="sign-up-btn">Sign Up</a></li>
 
-    <div class="hamburger">
-      <span class="fas fa-bars"></span>
-    </div>
-  </header>
+        </ul>
 
-  <!-- Главный баннер -->
-  <section id="home" class="hero" data-aos="fade-in">
-    <h1>Начните свое обучение IT с сегодня!</h1>
-    <p>Широкий выбор направления и курсов для всех уровней</p>
-    <a href="#courses" class="btn">Просмотреть курсы</a>
-  </section>
+        <div class="hamburger">
+            <span class="fas fa-bars"></span>
+        </div>
+    </header>
 
-  <!-- О нас -->
-  <section id="about" class="about" data-aos="fade-up">
-    <h2 class="section-title">О нашем сайте</h2>
-    <p>Этот сайт создан для того что, сделать обучение
-         IT-технологиям доступным и эффективным для всех.</p>
+    <!-- Главный баннер -->
+    <section id="home" class="hero" data-aos="fade-in">
+       <img
+            src="./Фото главний/erasebg-transformed.png"> 
+             <div class="hero-desk">
+            <h1>Начните свое обучение IT с сегодня!</h1>
+            <p>Широкий выбор направления и курсов для всех уровней</p>
+            <a href="#courses" class="btn">Просмотреть курсы</a>
+        </div>
+         
+    </section>
 
-    <h2>Наша миссия</h2>
-    <p>Предоставить качественное образование в области IT, помогая людям развивать свои навыки и достигать успеха в карьере.</p>
+    <!-- О нас -->
+    <section id="about" class="about" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">О нашем сайте</h2>
+            <p>
+                Добро пожаловать в <strong>IT LEARN.TJ</strong> — ваш старт в мир информационных технологий!<br>
+                Мы — современная онлайн-школа, созданная для тех, кто хочет освоить востребованные IT-навыки с нуля.
+                Наши курсы подойдут как новичкам, так и тем, кто хочет повысить свою квалификацию.
+            </p>
 
-    <!-- Часто задаваемые вопросы -->
-    <h3>Часто задаваемые вопросы</h3>
+            <h3><i class="fas fa-laptop-code"></i> Что мы предлагаем?</h3>
+            <ul>
+                <li><i class="fas fa-code"></i> Курсы по программированию, дизайну, веб-разработке, кибербезопасности и
+                    другим направлениям</li>
+                <li><i class="fas fa-tasks"></i> Пошаговое обучение с практическими заданиями</li>
+                <li><i class="fas fa-user-graduate"></i> Поддержка от опытных наставников</li>
+                <li><i class="fas fa-mobile-alt"></i> Удобный личный кабинет и доступ с любого устройства</li>
+            </ul>
 
-    <h3>Что такое IT?</h3>
-    <p>IT — это работа с компьютерами, программами и данными. Всё, что связано с технологиями и интернетом.</p>
+            <h3><i class="fas fa-star"></i> Почему выбирают нас?</h3>
+            <ul>
+                <li><i class="fas fa-language"></i> Обучение на понятном языке</li>
+                <li><i class="fas fa-sync-alt"></i> Актуальные программы, соответствующие требованиям рынка</li>
+                <li><i class="fas fa-certificate"></i> Сертификаты по окончании</li>
+                <li><i class="fas fa-briefcase"></i> Возможность стажировки и трудоустройства</li>
+            </ul>
 
-    <h3>Как выбрать направление?</h3>
-    <p>Не знаете, с чего начать? Пройдите короткий тест, чтобы подобрать подходящее IT-направление:</p>
-    <a href="test.html" class="btn1">Пройти тест</a>
-  </section>
+            <p>
+                <strong>Начни сегодня</strong> — стань частью IT будущего с <strong>IT LEARN.TJ</strong>!
+            </p>
+        </div>
+       <img src="./Фото главний/teamwork-project-isometric-composition-with-four-female-characters-developing-user-interface-website-vector-illustration.png" alt=""> 
+    </section>
 
-  <section id="It" class="it" data-aos="fade-up">
-    <h1>Сфера IT</h1>
-    <div class="grid">
-        <div class="item black irem-0">
-            <div class="deck">
-                <h1>Веб-разработка</h1>
-                <p>
-                    создание сайтов и веб-приложений (Frontend, Backend, Fullstack).
-                </p>
+
+    <section id="It" class="it" data-aos="fade-up">
+        <h1 class="h1">Сфера IT</h1>
+        <div class="grid">
+
+            <div class="item bg-1 irem-0">
+                <div class="deck">
+                    <h1>Веб-разработка</h1>
+                    <p>Создание сайтов и веб-приложений (Frontend, Backend, Fullstack).</p>
+                    <a href="./сфера index/web-raz.html" class="btn1">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="item bg-2 irem-0">
+                <div class="deck">
+                    <h1>Мобильная разработка</h1>
+                    <p>Разработка приложений для Android и iOS.</p>
+                    <a href="./сфера index/mobili-dev.html" class="btn1">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="item bg-3 irem-0">
+                <div class="deck">
+                    <h1>Анализ данных</h1>
+                    <p>Работа с большими данными, машинное обучение, аналитика.</p>
+                    <a href="./сфера index/analiz.html" class="btn1">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="item bg-4 irem-0">
+                <div class="deck">
+                    <h1>Game development</h1>
+                    <p>Разработка компьютерных и мобильных игр.</p>
+                    <a href="./сфера index/game-dev.html" class="btn1">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="item bg-5 irem-2">
+                <div class="deck">
+                    <h1>Системное администрирование и DevOps</h1>
+                    <p>Настройка серверов, автоматизация процессов, CI/CD.</p>
+                    <a href="./сфера index/sysadmin.html" class="btn1">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="item bg-6 irem-3">
+                <div class="deck">
+                    <h1>IT</h1>
+                    <p>IT — это сокращение от Information Technology, что в переводе с английского означает
+                        "информационные технологии".</p>
+                    <a href="./сфера index/it.html" class="btn1">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="item bg-7 irem-2">
+                <div class="deck">
+                    <h1>Кибер безопасность</h1>
+                    <p>Защита данных, сетей и систем от взломов и атак.</p>
+                    <a href="./сфера index/cyber.html" class="btn1">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="item bg-8 irem-1">
+                <div class="deck">
+                    <h1>UX/UI-дизайн</h1>
+                    <p>Проектирование интерфейсов и пользовательского опыта.</p>
+                    <a href="./сфера index/ux-ui.html" class="btn1">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="item bg-9 irem-1">
+                <div class="deck">
+                    <h1>Искусственный интеллект (AI)</h1>
+                    <p>Разработка интеллектуальных систем, нейросетей и алгоритмов. Хочешь, подскажу, какое направление
+                        тебе может подойти по интересам и способностям?</p>
+                    <a href="./сфера index/ai.html" class="btn1">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="item bg-10 irem-1">
+                <div class="deck">
+                    <h1>Тестирование и QA</h1>
+                    <p>Проверка качества программных продуктов (ручное и автоматизированное тестирование).</p>
+                    <a href="./сфера index/qa.html" class="btn1">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="item bg-11 irem-1">
+                <div class="deck">
+                    <h1>Блокчейн и криптотехнологии</h1>
+                    <p>Разработка децентрализованных приложений и смарт-контрактов (Solidity, Ethereum).</p>
+                    <a href="./сфера index/blockchain.html" class="btn1">Узнать больше</a>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="faq-item">
+                <h3>1. С чего начать изучение IT?</h3>
+                <p>Начните с основ: HTML, CSS и базового программирования (например, Python или JavaScript). Выберите
+                    направление — веб-разработка, дизайн, кибербезопасность и т.д.</p>
+            </div>
+            <div class="faq-item">
+                <h3>2. Сколько времени нужно, чтобы стать программистом?</h3>
+                <p>Если учиться регулярно по 2–3 часа в день, то за 6–12 месяцев можно освоить основы и начать работать
+                    над реальными проектами.</p>
+            </div>
+            <div class="faq-item">
+                <h3>3. Нужно ли знать английский язык для работы в IT?</h3>
+                <p>Да, английский язык очень помогает, особенно при чтении документации, прохождении курсов и общении в
+                    командах.</p>
+            </div>
+            <div class="faq-item">
+                <h3>4. Где найти практику или первую работу?</h3>
+                <p>Можно начать с фриланса на платформах вроде Kwork, Upwork или сделать собственные проекты и добавить
+                    их в портфолио.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <h1>Курс</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="./Фото главний/html.webp"
+                    alt="HTML Course">
+                <div class="card-content">
+                    <h3 class="card-title">HTML</h3>
+                    <p class="card-description">Научитесь создавать структуру сайтов с нуля!</p>
+                    <a href="#" class="card-button">Записаться</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./Фото главний/css.webp" alt="CSS Course">
+                <div class="card-content">
+                    <h3 class="card-title">CSS</h3>
+                    <p class="card-description">Сделайте сайты красивыми и адаптивными.</p>
+                    <a href="#" class="card-button">Записаться</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./Фото главний/javascript.webp" alt="JavaScript Course">
+                <div class="card-content">
+                    <h3 class="card-title">JavaScript</h3>
+                    <p class="card-description">Добавьте интерактивность и динамику на сайты.</p>
+                    <a href="#" class="card-button">Записаться</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./Фото главний/python.webp" alt="Python Course">
+                <div class="card-content">
+                    <h3 class="card-title">Python</h3>
+                    <p class="card-description">Освойте язык для веб-разработки и анализа данных.</p>
+                    <a href="#" class="card-button">Записаться</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./Фото главний/c++.webp" alt="C++ Course">
+                <div class="card-content">
+                    <h3 class="card-title">C++</h3>
+                    <p class="card-description">Погрузитесь в мир высокопроизводительного кода.</p>
+                    <a href="#" class="card-button">Записаться</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./Фото главний/c-sharp.webp" alt="C# Course">
+                <div class="card-content">
+                    <h3 class="card-title">C#</h3>
+                    <p class="card-description">Создавайте приложения под Windows и .NET.</p>
+                    <a href="#" class="card-button">Записаться</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a href="./сфера index/Curs.html" class="cards-button"><Больше</a>
+    </section>
+
+    <section id="otziv" class="otziv"> 
+        <h1>Отзывы наших пользователей</h1>
+       <div id="reviews" class="otziv">
+          <div class="form otziv">
+            <img src="https://avatars.mds.yandex.net/i?id=01becbebfaa96f89e762f888d295fa1f72affa0c-4283205-images-thumbs&n=13" alt="avatar" class="avatar">
+            <div class="review-content otziv">
+              <strong class="otziv">Алина</strong>
+              <p class="otziv">Очень понравилось обучение, всё понятно и доступно!</p>
+            </div>
+          </div>
+          <div class="form otziv">
+            <img src="https://i.pinimg.com/736x/ee/2e/be/ee2ebe8fa461496be850516191dcb08b.jpg" alt="avatar" class="avatar">
+            <div class="review-content otziv">
+              <strong class="otziv">Мухаммад</strong>
+              <p class="otziv">Курс был полезным и интересным, рекомендую всем!</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="form" class="otziv">
+          <input type="text" id="name" placeholder="Ваше имя" required>
+          <textarea id="text" placeholder="Ваш отзыв" rows="4" required></textarea>
+          <button >Добавить отзыв</button>
+        </div>
+      
+       
+      </section>
     
-        <div class="item blue irem-0">
-            <div class="deck">
-                <h1>Мобильная разработка</h1>
-                <p>
-                    разработка приложений для Android и iOS.
-                </p>
-            </div>
-        </div>
-    
-        <div class="item green irem-0">
-            <div class="deck">
-                <h1>анализ данных</h1>
-                <p>
-                    работа с большими данными, машинное обучение, аналитика
-                </p>
-            </div>
-        </div>
-    
-        <div class="item black irem-0">
-            <div class="deck">
-                <h1>Game Development </h1>
-                <p>
-                    разработка компьютерных и мобильных игр.
-                </p>
-            </div>
-        </div>
-    
-        <div class="item dark irem-2">
-            <div class="deck">
-                <h1>Системное <br> 
-                    админ <br> 
-                    и DevOps</h1>
-                <p>
-                    настройка серверов, автоматизация процессов, CI/CD.
-                </p>
-            </div>
-        </div>
-    
-        <div class="item black irem-3">
-            <div class="deck">
-                <h1>IT</h1>
-                <p>
-                    это сокращение от Information Technology, что в переводе с английского означает "информационные технологии".
-                </p>
-            </div>
-        </div>
-    
-        <div class="item dark irem-2">
-            <div class="deck">
-                <h1>Кибер безопасность</h1>
-                <p>
-                    защита данных, сетей и систем от взломов и атак.
-                </p>
-            </div>
-        </div>
-    
-        <div class="item blue irem-1">
-            <div class="deck">
-                <h1>UX/UI-дизайн</h1>
-                <p>
-                    проектирование интерфейсов и пользовательского опыта
-                </p>
-            </div>
-        </div>
-    
-        <div class="item green irem-1">
-            <div class="deck">
-                <h1>Искусственный интеллект (AI)</h1>
-                <p>
-                    разработка интеллектуальных систем, нейросетей и алгоритмов.
-                    Хочешь, подскажу, какое направление тебе может подойти по интересам и способностям?
-                </p>
-            </div>
-        </div>
 
-        <div class="item blue irem-1">
-            <div class="deck">
-                <h1>Тестирование и QA</h1>
-                <p>
-                    проверка качества программных продуктов (ручное и автоматизированное тестирование).
-                </p>
-            </div>
+    <footer class="site-footer">
+        <div class="footer-container">
+          
+          <div class="footer-about">
+            <h3>IT LEARN.TJ</h3>
+            <p>IT LEARN.TJ — платформа для изучения информационных технологий: программирование, дизайн, кибербезопасность и многое другое.</p>
+          </div>
+       
+      
+          <div class="footer-contact">
+            <h4>Контакты</h4>
+            <p>Email: info@IT LEARN.TJ.com</p>
+            <p>Телефон: +992 92 896 34 26</p>
+          </div>
+          <div class="footer-social">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
-    
-        <div class="item green irem-1">
-            <div class="deck">
-                <h1>Блокчейн и криптотехнологии</h1>
-                <p>
-                    разработка децентрализованных приложений и смарт-контрактов (Solidity, Ethereum).
-                </p>
-            </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 IT LEARN.TJ. Все права защищены.</p>
         </div>
-    </div>
-  </section>
-
+      </footer>
+      
 </body>
+
 </html>

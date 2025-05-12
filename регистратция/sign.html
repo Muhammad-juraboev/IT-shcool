@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+         * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .form-container {
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 16px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .input {
+        display: block;
+        width: 100%;
+        padding: 12px 18px;
+        margin-bottom: 18px;
+        font-size: 16px;
+        color: #333;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f9fafb;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+    .input:focus {
+        border-color: #6e7dff;
+        background-color: #fff;
+        box-shadow: 0 0 8px rgba(110, 125, 255, 0.4);
+    }
+
+    button {
+        display: inline-block;
+        width: 100%;
+        padding: 12px 18px;
+        background-color: #6e7dff;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+        background-color: #4e59cc;
+        transform: scale(1.05);
+    }
+
+    .button:active {
+        background-color: #3b47a2;
+        transform: scale(1);
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer a {
+        color: #6e7dff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+        color: #4e59cc;
+    }
+    </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Регистрация</h2>
+    <form action="#">
+        <input type="text" placeholder="введите текст" class="input">
+        <input type="password" placeholder="введите пароль" class="input">
+        <input type="password" placeholder="повторите пароль" class="input">
+        <button><a href="file:///C:/Users/user/Desktop/1/profil.html">Зарегистрироваться</a></button>
+    </form>
+
+    <div class="footer">
+        <p>Уже есть аккаунт? <a href="./Войти.html">Войти</a></p>
+    </div>
+</div>
+
+</body>
+</html>
+
